@@ -18,5 +18,17 @@ namespace HeBianGu.FFMPEG.UnitTest.DriverBase
 
             driver.MediaToSound(input, outPut);
         }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+            MediaDriver driver = new MediaDriver(@"F:\GitHub\WPF-FFMPEG\Document\ffmpeg\ffmpeg.exe");
+
+            string input = @"F:\GitHub\WPF-FFMPEG\Document\ffmpeg\dg.mp4";
+
+            string outPut = @"F:\GitHub\WPF-FFMPEG\Document\ffmpeg\dg.mp3";
+
+            driver.MediaToSound(input, outPut);
+        }
     }
 }
